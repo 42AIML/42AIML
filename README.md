@@ -45,7 +45,6 @@ Learn **Python3** not Python2 [Why?](https://wiki.python.org/moin/Python2orPytho
 #### AI
 * [Artificial Intelligence: A Modern Approach(AIMA) 3rd Ed PDF](https://www.ics.uci.edu/~rickl/courses/cs-171/aima-resources/Artificial%20Intelligence%20A%20Modern%20Approach%20(3rd%20Edition).pdf)
 	* [AIMA Website](http://aima.cs.berkeley.edu/)
-* [AGI Education Suggested List](https://sites.google.com/site/narswang/home/agi-introduction/agi-education)
 
 #### PyTorch
 Learning and understanding the concepts are more important than the framework (i.e Pytorch or Tensorflow
