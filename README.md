@@ -7,7 +7,7 @@ Learn **Python3** not Python2 [Why?](https://wiki.python.org/moin/Python2orPytho
 
 * [Quora Post - Free resources to learn Python](https://www.quora.com/What-are-some-good-free-resources-to-learn-Python)
 * [/r/learnpython wiki](https://www.reddit.com/r/learnpython/wiki/index) Lots of resources here
-* [Codeacademy]
+* [CodeAcademy](https://www.codecademy.com/learn/learn-python)
 * [CodeWars](http://www.codewars.com/?language=python) List of exercises and challenges to complete similiar to Hackerrank and Leetcode.com to practice
 
 ###### Free Online Books
@@ -64,7 +64,8 @@ Learning and understanding the concepts are more important than the framework (i
 #### Install Tips
 * Run and use `python3` in shell after you install to test syntax quickly
 * To install packages run `pip3 install <package>`
-	* install `ptpython` and use that instead of `python3` interpreter to test code
+	* install better REPL `ptpython` or `bpython` and use that instead of `python3` interpreter to test code... e.ge `pip3 install bpython` then in terminal run `bpython`
+* Do it online [here](https://code.sololearn.com/#py)
 
 ### C/Python Differences ([Stackoverflow Link](https://www.quora.com/What-are-some-differences-between-C++-Python-and-C))
 | C	| Python|
