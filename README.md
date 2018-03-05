@@ -16,7 +16,7 @@ Learn **Python3** not Python2 [Why?](https://wiki.python.org/moin/Python2orPytho
 * [DiveIntoPython3](http://www.diveintopython3.net/)
 * [Tiny Python Notebook](https://github.com/mattharrison/Tiny-Python-3.6-Notebook/blob/master/python.rst) table of notes and examples for Python syntax (pretty short)
 
-##### Data science
+#### Data Science
 * [101 Numpy Exercises for Data Analysis in Python](https://www.machinelearningplus.com/101-numpy-exercises-python/)
 * [Data Science Notebooks Repo](https://github.com/donnemartin/data-science-ipython-notebooks)
 
