@@ -1,0 +1,6 @@
+Keras==2.1.2
+pandas==0.21.0
+numpy==1.13.3
+seaborn==0.8.1
+sklearn==0.0
+matplotlib==2.1.0
