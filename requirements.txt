@@ -4,3 +4,5 @@ numpy==1.13.3
 seaborn==0.8.1
 sklearn==0.0
 matplotlib==2.1.0
+tensorflow==1.4.1
+tensorflow-tensorboard==0.4.0rc3
