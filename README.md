@@ -55,6 +55,24 @@ Learning and understanding the concepts are more important than the framework (i
 	- [Practical Pytorch](https://github.com/spro/practical-pytorch)
 	- [Pytorch Examples](https://github.com/jcjohnson/pytorch-examples)
 	- [Pytorch Tutorial](https://github.com/yunjey/pytorch-tutorial)
+	
+##### Install PyTorch Globally
+1. You should already have python3.6 installed(if you ran the brew setup guide below)
+2. Go to [pytorch.org](https://pytorch.org)
+3. Select
+ * OS -> Mac OSX
+ * Package Manager -> pip
+ * Python -> 3.6 (you can verify the python version by running `python3 --version` in terminal)
+ * CUDA -> doesn't matter, we aren't going to install GPU drivers yet
+3. Copy what's in the **'Run this command:'** text box and paste into terminal
+4. After it's finished you should be done. To verify:
+	- `pip freeze | grep torch` should show you the version installed
+	- run 
+```Python
+ import torch
+
+ print(torch.__version__)
+ ```
 
 ### How to install Python on Mac?
 1. Install brew (PM marvin `!brew` for instructions)
@@ -63,8 +81,23 @@ Learning and understanding the concepts are more important than the framework (i
 #### Install Tips
 * Run and use `python3` in shell after you install to test syntax quickly
 * To install packages run `pip3 install <package>`
-	* install better REPL `ptpython` or `bpython` and use that instead of `python3` interpreter to test code... e.ge `pip3 install bpython` then in terminal run `bpython`
-* Do it online [here](https://code.sololearn.com/#py)
+	* install better REPL `ptpython` use that instead of `python3` interpreter to test code: `pip3 install ptpython` then in terminal run `ptpython`
+* Run Pyton online [here](https://code.sololearn.com/#py)
+
+#### Installing packages into a virtualenv (per project basis)
+1. Install virtualenv package `pip3 install virtualenv`
+	- If you run `pip3 freeze`, you'll get a list of all pip packages installed  and their versions globally.
+2. Go to your project directory `cd <my_new_project_path>`
+3. Run `python3.6 -m virtualenv venv` or `virtualenv venv`. It'll create a new folder to install your dependcies in.
+4. There's also scripts created in the `venv` folder to `activate` a virtualenv
+5. Let's activate it: `source venv/bin/activate`
+	- You should notice that your terminal has changed. `(venv)` should be prepended to the front of the cmd line
+6. Now when you install packages or run pip commands they'll be installed to and ran from the virtualenv
+7. If you do `pip freeze`, you'll notice it returns an empty list.
+	- Try to install a pip package and rerun `pip freeze`
+9. Now you can install packages normally with pip or install all packages found in a 'requirements.txt' with `pip -r requirements.txt`
+10. When you run your scripts(e.g. `python3.6 do_stuff.py` it'll use packages found in env first)
+11. To leave or `deactivate` the environment simply enter `deactivate` into the cmdline.
 
 ### C/Python Differences ([Stackoverflow Link](https://www.quora.com/What-are-some-differences-between-C++-Python-and-C))
 | C	| Python|
