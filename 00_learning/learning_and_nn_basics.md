@@ -27,7 +27,7 @@
 
 #### There's also semi-supervised that is a mix of these two
 
-## Reinforcement Learning
+## Reinforcement Learning(RL)
 
 When it is not in our power to determine what is true, we ought to act in accordance with what is most probable. - Descartes
 
@@ -46,16 +46,15 @@ source: https://deeplearning4j.org/deepreinforcementlearning
 
 ![neural_network_2](https://ml.berkeley.edu/blog/assets/tutorials/3/recognize%20dog%20neural%20network.png)
 
-
-A neural network defines a mapping **y = f(x)** given some parameters **weights** that results in a _universal_ **function approximator**. In other words, the goal of a neural network is to discover a mapping(**f**) between some input(**x**) and the desired output(**y**). For the most part, in DL, we aren't interested in the form of the function that we're learning, only that it makes accurate predictions. This is the **black box** approach. If we're interested in the shape and form of the function(the interpreability of it) then we can use simpler algorithms(like shallow ML).
+A neural network defines a mapping **y = f(x)** given some parameters **weights** that results in a _universal_ **function approximator**. In other words, the goal of a neural network is to discover a mapping(**f**) between some input(**x**) and the desired output(**y**). For the most part, in Deep Learning(DL), we aren't interested in the form of the function that we're learning, only that it makes accurate predictions. This is the **black box** approach. If we're interested in the inner workings of the function then we can use simpler algorithms(like shallow Machine Learning(ML)).
 
 In our training data, we have **x** (e.g. pixels, house price, words) that directly specify a label **y** (e.g. cat/dog/bear/etc., $, yes/no). We are _directly_ telling the model that if we give it **x** we want it to predict **y**.
 
 ## Why do we need a function approximator?
 
-In our data, we have a dataset with inputs(**x**) and outputs(**x**). It may be a simple task to model the correlation between the two (X -> Y) such that we can create a function lik a linear model(y = mx + b). But, what if the correlation isn't obvious? A NN will search for correlation between the inputs and outputs. However, what if the inputs don't directly correctly with the outputs? Then we can add "intermediate datasets" or intermediate **features** that themselves help learn to model the correlation. These intermediate "datasets" are the **hidden layers** (more on this later).
+In our data, we have a dataset with inputs(**x**) and outputs(**x**). It may be a simple task to model the correlation between the two (X -> Y) such that we can create a function lik a linear model(y = mx + b). But, what if the correlation isn't obvious? A Neural Network(NN) will search for correlation between the inputs and outputs. However, what if the inputs don't directly correctly with the outputs? Then we can add "intermediate datasets" or intermediate **features** that themselves help learn to model the correlation. These intermediate "datasets" are the **hidden layers** (more on this later).
 
-In other words, an image of a dog is composed of pixels but no one pixel determines whether it's a picture of a dog or not. As humans, we're able to pick up on **patterns** in the image (i.e. **configurations of pixels**) that help us identify a dog. These **combinations** of pixels could be ears, nose, eyes, etc. Overall, at each layer the model is building these configurations to help it in the next layer. So we start simple then go to complex configurations which are build on the previous ones. The final output layer then is able to take these complex configurations(eyes, nose, hair) to predict whether there's a dog or not.
+In other words, an image of a dog is composed of pixels but no one pixel determines whether it's a picture of a dog or not. As humans, we're able to pick up on **patterns** in the image (i.e. **configurations of pixels**) that help us identify a dog. These **combinations** of pixels could be ears, nose, eyes, etc. Overall, at each layer the model is building these configurations to help it in the next layer. So we start simple then go to complex configurations which are built on the previous ones(there's feature hierarchy of sorts). The final output layer then is able to take these complex configurations(eyes, nose, hair) to predict whether there's a dog or not.
 
 ![layer_by_layer](http://deliveryimages.acm.org/10.1145/2010000/2000787/figs/f2.jpg)
 
