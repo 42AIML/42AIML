@@ -26,7 +26,7 @@ Learn **Python3** not Python2 [Why?](https://wiki.python.org/moin/Python2orPytho
 
 #### Reinforcement Learning
 ###### Books
-* [RL: An Introduction](http://web.stanford.edu/class/psych209/Readings/SuttonBartoIPRLBook2ndEd.pdf)
+* [RL: An Introduction](http://incompleteideas.net/book/bookdraft2017nov5.pdf)
 ###### Course
 * [UCL Course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html)
 
